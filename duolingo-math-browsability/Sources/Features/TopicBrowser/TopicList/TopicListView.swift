@@ -112,7 +112,7 @@ struct TopicListView: View {
                     VStack(alignment: .leading, spacing: 8) {
                         // Section label
                         Text(section.label)
-                            .padding(.top, idx == 0 ? 60 : 24)
+                            .padding(.top, idx == 0 ? 0 : 24)
                             .font(.system(.caption, design: .rounded).weight(.semibold))
                             .foregroundStyle(.secondary)
                             .textCase(.uppercase)
@@ -143,7 +143,7 @@ struct TopicListView: View {
                 }
                 .padding(.bottom, 24)
             }
+            .padding(.top, 16)
         }
-        .background(Color.white)
     }
 }
